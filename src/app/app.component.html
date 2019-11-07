@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-xs-12">
+        <app-game-control (eventEmit)="onEventEmit($event)"></app-game-control>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <app-odd *ngFor="let cur of oddNumbers" [number]="cur"></app-odd>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-xs-12">
+        <app-even *ngFor="let cur of evenNumbers" [number]="cur"></app-even>
+    </div>
+</div>
